@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { AppRegistry, View, Text } from 'react-native'
+import React, { Component } from "react";
+import { AppRegistry, View, Text } from "react-native";
 
-import Style from '../../Style'
+import Style from "../../Style";
 
 export default class HomeLogo extends Component {
   render() {
@@ -9,8 +9,6 @@ export default class HomeLogo extends Component {
       <View style={Style.myView}>
         <Text style={Style.myText}>Logo</Text>
       </View>
-    )
+    );
   }
 }
-
-
