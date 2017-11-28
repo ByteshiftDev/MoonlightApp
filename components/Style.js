@@ -10,9 +10,9 @@ const Style = StyleSheet.create({
   },
 
   myText: {
-    fontSize: 20,
+    fontSize: 15,
     textAlign: "center",
-    margin: 300
+    margin: 10
   }
 });
 

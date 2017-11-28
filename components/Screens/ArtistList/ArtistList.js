@@ -16,13 +16,6 @@ export default class ArtistList extends Component {
   render() {
     const { navigate } = this.props.navigation;
 
-    return (
-      <View style={Style.myView}>
-        <ArtistData />
-        <Text onPress={() => navigate("Home")} style={Style.myText}>
-          Go Home
-        </Text>
-      </View>
-    );
+    return <ArtistData />;
   }
 }
