@@ -17,13 +17,13 @@ const Style = StyleSheet.create({
 
     homeView: {
       flex: 1,
-      justifyContent: 'center',
+      // justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#212121',
     },
 
     logoView: {
-      flex: 0.7,
+      flex: 0.75,
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#212121',
@@ -36,6 +36,7 @@ const Style = StyleSheet.create({
     },
 
     homeButton: {
+      marginTop: 20,
       fontFamily: 'Montserrat',
       padding: 15,
       backgroundColor: '#FAFCED',
