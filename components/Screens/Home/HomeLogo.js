@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
-import { AppRegistry, View, Text } from 'react-native'
+import { AppRegistry, View, Text, Image } from 'react-native'
 
 import Style from '../../Style'
 
 export default class HomeLogo extends Component {
   render() {
     return (
-      <View style={Style.homeView}>
-        <Text style={Style.homeText}>Welcome to</Text>
-        <Text style={Style.homeLogo}>Moonlight</Text>
-        <Text style={Style.homeText}>Coffee, boutique, and gallery</Text>        
+      <View style = { Style.logoView }>
+        <Image style = { Style.homeLogo } source={require('../../../assets/images/logo.png')} />
       </View>
     )
   }

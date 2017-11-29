@@ -22,17 +22,17 @@ const Style = StyleSheet.create({
       backgroundColor: '#212121',
     },
 
-    homeText: {
-      fontFamily: 'MontserratBold',
-      fontWeight: 'bold',
-      textAlign: 'left',
-      color: '#FAFCED',
+    logoView: {
+      flex: 0.7,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#212121',
     },
 
     homeLogo: {
-      color: '#FAFCED',
-      textAlign: 'center',
-      fontSize: 80,
+      flex: 0.9,
+      aspectRatio: 1.0,
+      resizeMode: 'contain',
     },
 
     homeButton: {

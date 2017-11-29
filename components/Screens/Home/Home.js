@@ -3,7 +3,7 @@
 */
 
 import React, { Component } from 'react'
-import { AppRegistry, View, Text } from 'react-native'
+import { AppRegistry, View, Text, Image } from 'react-native'
 import Button from 'react-native-button';
 
 import Style from '../../Style'
