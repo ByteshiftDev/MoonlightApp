@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 const Style = StyleSheet.create({
     myView: {
@@ -43,7 +43,22 @@ const Style = StyleSheet.create({
       color: '#212121',
       fontSize: 12,
       letterSpacing: 0.1,
+    },
+
+    myView: {
+      marginTop: 10,
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "#F5FCFF"
+    },
+  
+    myText: {
+      fontSize: 15,
+      textAlign: "center",
+      margin: 10
     }
+
   });
 
 export default Style;
