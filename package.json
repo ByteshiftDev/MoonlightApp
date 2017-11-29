@@ -29,11 +29,8 @@
     "expo": "^22.0.2",
     "react": "16.0.0-beta.5",
     "react-native": "^0.49.5",
-<<<<<<< HEAD
     "react-native-button": "^2.1.0",
-=======
     "react-native-elements": "^0.18.4",
->>>>>>> master
     "react-navigation": "^1.0.0-beta.19"
   }
 }

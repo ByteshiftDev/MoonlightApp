@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import React, { Component } from 'react'
 import { AppRegistry, View, Text, Image } from 'react-native'
-=======
-import React, { Component } from "react";
-import { View, Text } from "react-native";
->>>>>>> master
 
 import Style from "../../Style";
 
