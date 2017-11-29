@@ -14,12 +14,11 @@ export default class ArtistDetail extends Component {
 
   render() {
     const { navigate } = this.props.navigation;
+    const { artist } = this.props.navigation.state.params;
 
     return (
       <View style={Style.myView}>
-        <Text onPress={() => navigate("Home")} style={Style.myText}>
-          Go Home
-        </Text>
+        <Text style={Style.myText}>{artist.name.first}</Text>
       </View>
     );
   }
