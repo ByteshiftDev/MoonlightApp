@@ -3,7 +3,8 @@
 */
 
 import React, { Component } from 'react'
-import { AppRegistry, View, Text, Button } from 'react-native'
+import { AppRegistry, View, Text } from 'react-native'
+import Button from 'react-native-button';
 
 import Style from '../../Style'
 import HomeLogo from './HomeLogo'
@@ -16,13 +17,10 @@ export default class Home extends Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View style = { Style.myView }>
+      <View style = { Style.homeView }>
         <HomeLogo/>
-        <Button onPress= { ()=> navigate('ArtistList') } 
-        title = "View Artist List" 
-        color = "#841584"/> 
+        <Button style = { Style.homeButton }onPress= { ()=> navigate('ArtistList') }>View Artist List</Button>
       </View>
     )
   }
 }
-
