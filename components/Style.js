@@ -16,7 +16,6 @@ const Style = StyleSheet.create({
     },
 
     homeView: {
-      marginTop: 20,
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
@@ -24,6 +23,8 @@ const Style = StyleSheet.create({
     },
 
     homeText: {
+      fontFamily: 'MontserratBold',
+      fontWeight: 'bold',
       textAlign: 'left',
       color: '#FAFCED',
     },
@@ -35,6 +36,8 @@ const Style = StyleSheet.create({
     },
 
     homeButton: {
+      fontFamily: 'Montserrat',
+      padding: 15,
       backgroundColor: '#FAFCED',
       color: '#212121',
       fontSize: 12,
