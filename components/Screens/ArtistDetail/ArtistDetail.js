@@ -3,7 +3,8 @@
 */
 
 import React, { Component } from "react";
-import { AppRegistry, View, Text } from "react-native";
+import { View, Text } from "react-native";
+import { Avatar } from "react-native-elements";
 
 import Style from "../../Style";
 
@@ -18,7 +19,17 @@ export default class ArtistDetail extends Component {
 
     return (
       <View style={Style.myView}>
-        <Text style={Style.myText}>{artist.name.first}</Text>
+        <Avatar
+          xlarge
+          rounded
+          source={{
+            uri: artist.picture.large
+          }}
+          activeOpacity={0.7}
+        />
+        <Text style={Style.myText}>
+          {artist.name.first} {artist.name.last}
+        </Text>
       </View>
     );
   }

@@ -3,7 +3,7 @@
 */
 
 import React, { Component } from "react";
-import { AppRegistry, View, Text, Button } from "react-native";
+import { View, Text, Button } from "react-native";
 
 import Style from "../../Style";
 import HomeLogo from "./HomeLogo";

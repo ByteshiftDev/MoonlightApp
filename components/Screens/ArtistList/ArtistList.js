@@ -16,7 +16,8 @@ export default class ArtistList extends Component {
 
   // Holds List of artist
   state = {
-    data: []
+    data: [],
+    url: "https://randomuser.me/api?results=10"
   };
 
   // After mounting component, API CALL
@@ -26,7 +27,7 @@ export default class ArtistList extends Component {
 
   // API Call to get lists of artists
   fetchData = async () => {
-    const response = await fetch("https://randomuser.me/api?results=10");
+    const response = await fetch(this.state.url);
     const json = await response.json();
     this.setState({ data: json.results });
   };
