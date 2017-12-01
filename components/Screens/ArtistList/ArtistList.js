@@ -40,11 +40,15 @@ export default class ArtistList extends Component {
       <View>
         <List>
           <FlatList
+            style={ Style.artistListContainer }
             data={this.state.data} // Build list using data stored in state
             keyExtractor={(x, i) => i} // 'x' is object in array, 'i' is index acts as unique ID
             renderItem={({ item }) => (
               <ListItem
                 roundAvatar
+                titleStyle={ Style.artistListItem }
+                chevronColor='#212121'
+                // hideChevron='true'
                 avatar={{ uri: item.picture.thumbnail }}
                 title={`${item.name.first} ${item.name.last}`}
                 onPress={() => navigate("ArtistDetail", { artist: item })}

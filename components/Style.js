@@ -4,7 +4,16 @@ const Style = StyleSheet.create({
   // Artist Detail Screen Styles
   artistDetailContainer: {
     flex: 1,
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "#FAFCED"
+  },
+
+  artistListContainer: {
+    backgroundColor: '#FAFCED'
+  },
+
+  artistListItem: {
+    color: '#212121',
+    fontFamily: 'Montserrat'
   },
 
   avatarContainer: {
