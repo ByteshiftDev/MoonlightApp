@@ -3,7 +3,7 @@
 */
 
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text, FlatList, Image } from "react-native";
 import { Avatar } from "react-native-elements";
 
 import Style from "../../Style";
@@ -18,7 +18,7 @@ export default class ArtistDetail extends Component {
     const { artist } = this.props.navigation.state.params;
 
     return (
-      <View style={Style.myView}>
+      <View style={Style.artistDetailView}>
         <Avatar
           xlarge
           rounded
@@ -30,6 +30,22 @@ export default class ArtistDetail extends Component {
         <Text style={Style.myText}>
           {artist.name.first} {artist.name.last}
         </Text>
+        <FlatList
+          numColumns={2}
+          data={[
+            { uri: artist.picture.large },
+            { uri: artist.picture.large },
+            { uri: artist.picture.large },
+            { uri: artist.picture.large }
+          ]}
+          keyExtractor={(x, i) => i}
+          renderItem={({ item }) => (
+            <View style={Style.box}>
+              console.log(`${item.uri}`)
+              <Image source={{ uri: artist.picture.large }} />
+            </View>
+          )}
+        />
       </View>
     );
   }

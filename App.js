@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { AppRegistry, View, Text, Image } from 'react-native'
-import { StackNavigator } from 'react-navigation'
+import React, { Component } from "react";
+import { AppRegistry, View, Text, Image } from "react-native";
+import { StackNavigator } from "react-navigation";
 
 import Home from "./components/Screens/Home/Home";
 import ArtistList from "./components/Screens/ArtistList/ArtistList";

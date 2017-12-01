@@ -1,20 +1,44 @@
 import { StyleSheet } from "react-native";
 
 const Style = StyleSheet.create({
-  myView: {
-    marginTop: 10,
+  // Artist Detail Screen Styles
+  artistDetailView: {
     flex: 1,
+    //marginTop: 20,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F5FCFF"
   },
 
+  test2: {
+    flex: 2,
+    //justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    backgroundColor: "blue"
+  },
+
+  test3: {
+    flex: 1,
+    //justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    backgroundColor: "#7FFFD4"
+  },
+
+  box: {
+    backgroundColor: "steelblue",
+    padding: 100,
+    margin: 10
+  },
+
   myText: {
-    fontSize: 15,
+    fontSize: 20,
     textAlign: "center",
     margin: 10
   },
 
+  // Home Screen Styles
   homeView: {
     flex: 1,
     // justifyContent: 'center',
