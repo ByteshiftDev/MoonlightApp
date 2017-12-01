@@ -18,34 +18,35 @@ export default class ArtistDetail extends Component {
     const { artist } = this.props.navigation.state.params;
 
     return (
-      <View style={Style.artistDetailView}>
-        <Avatar
-          xlarge
-          rounded
-          source={{
-            uri: artist.picture.large
-          }}
-          activeOpacity={0.7}
-        />
-        <Text style={Style.myText}>
-          {artist.name.first} {artist.name.last}
-        </Text>
-        <FlatList
-          numColumns={2}
-          data={[
-            { uri: artist.picture.large },
-            { uri: artist.picture.large },
-            { uri: artist.picture.large },
-            { uri: artist.picture.large }
-          ]}
-          keyExtractor={(x, i) => i}
-          renderItem={({ item }) => (
-            <View style={Style.box}>
-              console.log(`${item.uri}`)
-              <Image source={{ uri: artist.picture.large }} />
-            </View>
-          )}
-        />
+      <View style={Style.artistDetailContainer}>
+        <View style={Style.avatarContainer}>
+          <Avatar
+            xlarge
+            rounded
+            source={{
+              uri: artist.picture.large
+            }}
+            activeOpacity={0.7}
+          />
+          <Text style={Style.myText}>
+            {artist.name.first} {artist.name.last}
+          </Text>
+        </View>
+        <View style={Style.artContainer}>
+          <FlatList
+            numColumns={2}
+            data={[
+              { image: artist.picture.large },
+              { image: artist.picture.large },
+              { image: artist.picture.large },
+              { image: artist.picture.large }
+            ]}
+            keyExtractor={(x, i) => i}
+            renderItem={({ item }) => (
+              <Image style={Style.box} source={{ uri: item.image }} />
+            )}
+          />
+        </View>
       </View>
     );
   }

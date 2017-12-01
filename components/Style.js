@@ -2,28 +2,22 @@ import { StyleSheet } from "react-native";
 
 const Style = StyleSheet.create({
   // Artist Detail Screen Styles
-  artistDetailView: {
+  artistDetailContainer: {
     flex: 1,
-    //marginTop: 20,
-    justifyContent: "center",
-    alignItems: "center",
     backgroundColor: "#F5FCFF"
   },
 
-  test2: {
-    flex: 2,
-    //justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row",
-    backgroundColor: "blue"
+  avatarContainer: {
+    flex: 1,
+    justifyContent: "flex-end",
+    alignItems: "center"
+    //backgroundColor: "blue"
   },
 
-  test3: {
-    flex: 1,
-    //justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row",
-    backgroundColor: "#7FFFD4"
+  artContainer: {
+    flex: 2,
+    alignItems: "center"
+    //backgroundColor: "#7FFFD4"
   },
 
   box: {
@@ -35,7 +29,7 @@ const Style = StyleSheet.create({
   myText: {
     fontSize: 20,
     textAlign: "center",
-    margin: 10
+    margin: 20
   },
 
   // Home Screen Styles
